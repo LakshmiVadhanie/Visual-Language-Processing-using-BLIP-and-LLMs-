@@ -54,41 +54,37 @@ Vision-language understanding is a crucial aspect of AI systems that bridge visu
    cd <your-repo-name>
 Install dependencies:
 
-bash
-Copy code
+ ```bash
 pip install -r requirements.txt
-Authenticate with Hugging Face Hub (optional but recommended):
 
-python
-Copy code
+
+Authenticate with Hugging Face Hub 
+
+ ```bash
 from huggingface_hub import login
 login(token="your_huggingface_token")
+
 Usage
 Training
 Fine-tuning on COCO
 Run the training script:
 
-bash
-Copy code
+ ```bash
 python train_blip.py --dataset coco --epochs 5 --batch_size 16
 Fine-tuning on MIMIC-CXR
 Update the dataset paths in the script and run:
 
-bash
-Copy code
+ ```bash
 python train_blip.py --dataset mimic --epochs 5 --batch_size 16
 Evaluation
 Evaluate on a validation dataset:
 
-bash
-Copy code
+ ```bash
 python evaluate.py --model blip --dataset coco
 Inference
 Generate Captions
-python
-Copy code
+ ```bash
 from inference import generate_caption
-
 caption = generate_caption("path/to/image.jpg")
 print("Generated Caption:", caption)
 Question Answering
