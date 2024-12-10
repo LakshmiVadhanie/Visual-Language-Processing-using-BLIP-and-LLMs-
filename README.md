@@ -1,4 +1,4 @@
-# Vision-Language Understanding with BLIP, VLP, and Mistral7B
+# Vision-Language Understanding with BLIP and LLMs
 
 This project implements a vision-language understanding system that integrates **BLIP**, **VLP**, and **Mistral7B** models. The system is trained on the COCO dataset for general-purpose image captioning and fine-tuned on MIMIC-CXR for healthcare-specific tasks. It supports caption generation and image-based question answering.
 
