@@ -12,8 +12,7 @@ This project implements a vision-language understanding system that integrates *
   - [Inference](#inference)
 - [Results](#results)
 - [Future Work](#future-work)
-- [Contributors](#contributors)
-- [License](#license)
+
 
 ---
 
@@ -54,15 +53,15 @@ Vision-language understanding is a crucial aspect of AI systems that bridge visu
    cd <your-repo-name>
 Install dependencies:
 
- ```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 
 Authenticate with Hugging Face Hub 
 
- ```bash
-from huggingface_hub import login
-login(token="your_huggingface_token")
+   ```bash
+  from huggingface_hub import login
+  login(token="your_huggingface_token")
 
 
 Usage
@@ -70,28 +69,34 @@ Training
 Fine-tuning on COCO
 Run the training script:
 
- ```bash
-python train_blip.py --dataset coco --epochs 5 --batch_size 16
+   ```bash
+  python train_blip.py --dataset coco --epochs 5 --batch_size 16
+
 Fine-tuning on MIMIC-CXR
 Update the dataset paths in the script and run:
 
- ```bash
-python train_blip.py --dataset mimic --epochs 5 --batch_size 16
+   ```bash
+  python train_blip.py --dataset mimic --epochs 5 --batch_size 16
+
 Evaluation
 Evaluate on a validation dataset:
 
- ```bash
-python evaluate.py --model blip --dataset coco
+   ```bash
+  python evaluate.py --model blip --dataset coco
+
 Inference
 Generate Captions
- ```bash
-from inference import generate_caption
-caption = generate_caption("path/to/image.jpg")
-print("Generated Caption:", caption)
-Question Answering
-python
-Copy code
-from inference import answer_question
 
-answer = answer_question("path/to/image.jpg", "What is in the image?")
-print("Answer:", answer)
+   ```bash
+  from inference import generate_caption
+  caption = generate_caption("path/to/image.jpg")
+  print("Generated Caption:", caption)
+
+Question Answering
+
+
+  ```bash
+  from inference import answer_question
+
+  answer = answer_question("path/to/image.jpg", "What is in the image?")
+  print("Answer:", answer)
