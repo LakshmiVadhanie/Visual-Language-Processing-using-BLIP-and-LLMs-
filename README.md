@@ -1,4 +1,4 @@
- Vision-Language Understanding Using BLIP, VLP, and Mistral7B
+# Vision-Language Understanding Using BLIP, VLP, and Mistral7B
 
 This project implements vision-language understanding by fine-tuning and integrating BLIP, VLP, and Mistral7B models. The system generates captions for input images and answers questions related to the images. The COCO dataset is used for pretraining and fine-tuning the models, and MIMIC-CXR is leveraged for domain-specific fine-tuning in the healthcare domain.
 
