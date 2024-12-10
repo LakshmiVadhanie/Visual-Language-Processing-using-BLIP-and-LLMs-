@@ -64,6 +64,7 @@ Authenticate with Hugging Face Hub
 from huggingface_hub import login
 login(token="your_huggingface_token")
 
+
 Usage
 Training
 Fine-tuning on COCO
