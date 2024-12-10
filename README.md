@@ -53,46 +53,51 @@ Vision-language understanding is a crucial aspect of AI systems that bridge visu
    cd <your-repo-name>
 Install dependencies:
 
-   ```bash
-   pip install -r requirements.txt
+## 2. Install Dependencies
+
+To install the required dependencies for the project, run the following command:
+
+```bash
+pip install -r requirements.txt
 
 
-Authenticate with Hugging Face Hub 
+
+## 3. Authenticate with Hugging Face Hub 
 
    ```bash
   from huggingface_hub import login
   login(token="your_huggingface_token")
 
 
-Usage
+##4. Usage
 Training
 Fine-tuning on COCO
-Run the training script:
+##5. Run the training script:
 
    ```bash
   python train_blip.py --dataset coco --epochs 5 --batch_size 16
 
-Fine-tuning on MIMIC-CXR
+##6. Fine-tuning on MIMIC-CXR
 Update the dataset paths in the script and run:
 
    ```bash
   python train_blip.py --dataset mimic --epochs 5 --batch_size 16
 
-Evaluation
+##7. Evaluation
 Evaluate on a validation dataset:
 
    ```bash
   python evaluate.py --model blip --dataset coco
 
-Inference
-Generate Captions
+
+##8. Generate Captions
 
    ```bash
   from inference import generate_caption
   caption = generate_caption("path/to/image.jpg")
   print("Generated Caption:", caption)
 
-Question Answering
+##9. Question Answering
 
 
   ```bash
